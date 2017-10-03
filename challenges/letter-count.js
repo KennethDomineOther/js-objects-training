@@ -30,4 +30,36 @@
 
 */
 
-// YOUR CODE HERE
+/*function letterCount(string) {
+    var count = {};
+    for (var i=0; i<string.length;i++) {
+       
+
+        var character = string.charAt(i);
+        if (count[character]) {
+           count[character]++;
+        } else {
+          count[character] = 1;
+        }
+    }
+
+    return count;
+};
+*/
+
+
+function letterCount(string) {
+  var output={};
+  var stringAsArray = string.split("");
+  stringAsArray.forEach(function(letter) {
+    if (output[letter]) {
+      output[letter] += 1;
+    } else {
+      output[letter] = 1;
+    }
+  });
+ 
+  return output;
+
+
+
