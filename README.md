@@ -1,3 +1,40 @@
+TRAINING REFLECTION:
+
+The letter-count was the first one I attempted, but also took the longest to complete. I originally came up with the answer, but had a for loop. Initially I couldn't solve it using forEach method, but I eventually came up with the solution after reading additional resources online. I was able to solve the ping pong challenge with the help of my peers via slack. Overall, once I solved the first two challenges, I solved the other two much quicker, not because they were easier, but rather that I knew how to approach the problems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Javascript Objects - Problem Set
 
 * Please **Fork & Clone** this repo.
