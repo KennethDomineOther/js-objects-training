@@ -37,4 +37,36 @@
 
 */
 
-// YOUR CODE HERE
+var table = [{steps: 0}, 3, 4, 5];
+// var table = [3, {steps: 1}, 4, 3, 3];
+// var table = [3, 4, 3, 3, {steps: 4}];
+// var table = [{steps: 8}, 3, 4, 5, 6]
+
+function pingPong(table){
+  var pingpongIndex = null;
+  //find pingpong and increase steps
+  table.forEach(function findPingPong(value, i){
+//     console.log(typeof value)
+//     console.log(value)
+    if(value && value["steps"]!= undefined){
+      pingpongIndex = i;
+    }
+  });
+  var normalizeSteps = table[pingpongIndex].steps %((table.length-1)*2);
+  table[pingpongIndex].steps +=1;
+  //move the pingpong
+  var pingpong = table[pingpongIndex];
+  console.log("this is normalizeSteps", normalizeSteps, "this is pingpongIndex", pingpongIndex)
+
+  if(normalizeSteps < 3){
+    table.splice(pingpongIndex, 1);
+    table.splice(pingpongIndex+1, 0, pingpong);
+  } else {
+    //splice left
+    table.splice(pingpongIndex,1)
+    table.splice(pingpongIndex-1, 0, pingpong)
+  }
+  console.log("did pingpong move?", table);
+}
+
+pingPong(table)
